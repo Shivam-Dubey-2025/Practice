@@ -1,2 +1,4 @@
 # Practice
-Daily Practice Set for All language
+Daily Practice Set for All languages
+<br>
+Practice Daily
