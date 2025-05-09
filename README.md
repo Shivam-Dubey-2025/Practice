@@ -1,13 +1,26 @@
-#Daily Practice Set for All languages
+# Daily Practice Set for All Languages
 
+## All Git Commands  
+**Follow the commands below to perform common Git operations**
 
-##All Git Commands 
-####Follow the Command to do the Things
+```bash
+# 1. Check your Git version
+git --version
 
-#####  1) git --version
-#####  2) git status : to check the status of the file
-#####  3) git commit -m "enter the message for commiit ": to commit the added file
-#####  4) git add "file name ": to add the file and make ready to commit
-#####  5) git add . : to add the all files in the project to add 
-#####  6) push origin "branch name" : to push the code on the github account 
-#####  7) pull origin "branch name" : to get the updated code from github to local 
+# 2. Check the status of files in the working directory
+git status
+
+# 3. Stage a specific file to be committed
+git add <file-name>
+
+# 4. Stage all changes in the current directory
+git add .
+
+# 5. Commit the staged changes with a message
+git commit -m "your commit message"
+
+# 6. Push your commits to the remote repository (e.g., GitHub)
+git push origin <branch-name>
+
+# 7. Pull the latest changes from the remote repository to your local branch
+git pull origin <branch-name>
