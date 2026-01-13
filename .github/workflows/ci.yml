@@ -1,21 +1,16 @@
-stage:
-  - build
-  - test
-  - deploy
- 
- 
+name: Print Only Pipeline
 
-running:
-  stage:build
-  script:-echo "hello Application Build Successfully"
-  
-  
-testing:
-  stage:build
-  script:-echo "hello Application Tested Successfully"
-  
-  
-deployed:
-  stage:build
-  script:-echo "hello Application Deployed Successfully"
-  
+on:
+  push:
+  pull_request:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message 1
+        run: echo "Hello from GitHub Actions"
+
+      - name: Print message 2
+        run: echo "Pipeline is working successfully"
